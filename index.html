@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salt,n</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar-a {
+            background-color: black;
+            padding: 10px 20px;
+        }
+        .navbar-content-b {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .navbar-logo-c img {
+            height: 80px;
+        }
+        .navbar-center {
+            display: flex;
+        }
+        .navbar-a a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .navbar-a a:hover {
+            background-color: grey;
+        }
+        .navbar-a .buttons-f {
+            display: flex;
+            height: 50px;
+            gap: 10px;
+        }
+        .navbar-a .buttons a {
+            background-color: red;
+            border-radius: 15px;
+            padding: 10px 15px;
+
+        }
+        .menu-icon-d, #menu-toggle {
+            display: none;
+        }
+        .menu-icon-d {
+            cursor: pointer;
+            padding: 10px;
+        }
+        .menu-icon-d .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        .img{
+           padding-left: 700px;
+
+           
+        }
+        @media (max-width: 768px) {
+            .navbar-content-b {
+                flex-direction: column;
+                align-items: flex-start;
+                overflow: hidden;
+            }
+            .navbar-center, .buttons-f {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+            #menu-toggle:checked ~ .navbar-center,
+            #menu-toggle:checked ~ .buttons {
+                display: flex;
+            }
+            .navbar-a a {
+                width: 100%;
+                text-align: center;
+            }
+            .menu-icon-d {
+                display: block;
+            }
+        }
+        @media (min-width: 769px) {
+            .navbar-center {
+                display: flex;
+            }
+            .buttons-f {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body style="overflow: scroll;">
+    <div class="navbar-a">
+        <div class="navbar-content-b">
+            <nav class="navbar-z"></nav>
+            <div class="navbar-logo-c">
+                <img src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp" alt="Logo">
+                <label for="menu-toggle" class="menu-icon-d">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <div class="navbar-center-e">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Publications</a>
+                <a href="#">Feedback</a>
+                
+            </div>
+            <div class="buttons-f">
+                <a style="background-color: black; color: white; border: 1px solid white;" href="#">Get a Franchise</a>
+                <a style="background-color: red;" href="#">Order Online<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </nav>
+        </div>
+        <h2 style="text-align: center; color: white; margin-top: 20px;">Welcome to <b>Salt'n Pepper</b></br> Restaurants! Our Brands</h2>
+        <P style="text-align: center; color: white; margin-top: 10px;">Please click our brands below for further information, reservations or to order online!</P>
+<div class="card-container" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; overflow: hidden;">
+    <div class="card" style="height: 130px; width: 250px; background-image: url('./screen/card1.png'); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
+       
+    </div>
+    <div class="card" style="height: 130px; width: 250px; background-image: url('./screen/card2.png'); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
+        
+    </div>
+    <div class="card" style="height: 130px; width: 250px; background-image: url('./screen/card3.png'); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden;">
+        
+    </div>
+</div>
+
+
+<div style="display: flex; size: 180px; justify-content: center; gap: 150px; margin-top: 20px; overflow: hidden;">
+    <button style="border-radius: 30px; height: 50px; width: 150px;">Order Now</button>
+    <button style="border-radius: 30px; height: 50px; width: 150px; ">Order Now</button>
+    <button style="border-radius: 30px; height: 50px; width: 150px; padding-bottom: 50px;">Reserve a Table</button>
+</div>
+<div>
+    <h1 style="justify-content: center; color: white; font-size: 50px; display: flex; padding-top: 50px; justify-content: center;">Salt'n Pepper<br>
+        Restaurant Franchises</h1>
+        <p style="display: flex; justify-content: center; color:  white;">Each of our franchises are individually managed. For further details, kindly contact them directly.</p>
+</div>
+<div style="padding-top: 50px;">
+    <p style="padding-left: 50px; color: red; display: flex;">I  S  L  A  M  A  B  A  D</p>
+    <p style="padding-left: 50px; font-size: x-large; color: white;">Salt'n Pepper Restaurant</p>
+    <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-location-dot"></i> 
+    <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-phone"></i> Ph: 051-2604904-6</p>
+    <button style="padding-left: 50px; color: white; background-color: black;">Get Directions     <i class="fa-solid fa-arrow-right"></i></button>
+    <img src="https://images-beta.tossdown.com/site/7aba8915-02ed-46ee-bd96-1063abe072fa.webp" style="padding-left: 650px; padding-bottom: 200px;"></div>
+    <div style="padding-top: 50px;">
+        <p style="padding-left: 50px; color: red;">F  A  I  A  S  A  L  A  B  A  D</p>
+        <p style="padding-left: 50px; font-size: x-large; color: white;">Salt'n Pepper Restaurant</p>
+        <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-location-dot"></i> 4-Kohinoor City, FaisalabadPlot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
+        <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-phone"></i> Ph: 041-8711404</p>
+        <button style="padding-left: 50px; color: white; background-color: black;">Get Directions     <i class="fa-solid fa-arrow-right"></i></button>
+        <img src="https://images-beta.tossdown.com/site/7aba8915-02ed-46ee-bd96-1063abe072fa.webp" style="text-align: right; padding-left: 650px; padding-bottom: 200px;"></div>
+        <div style="padding-top: 50px;">
+            <p style="padding-left: 50px; color: red;">B H A W A L P U R</p>
+            <p style="padding-left: 50px; font-size: x-large; color: white;">Salt'n Pepper Restaurant</p>
+            <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-location-dot"></i>D.C Chowk, opposite Commissioner House, Bahawalpur</p>
+            <p style="padding-left: 50px; color: white;"><i class="fa-solid fa-phone"></i> Ph: 062-2740271-2</p>
+            <button style="padding-left: 50px; color: white; background-color: black;">Get Directions     <i class="fa-solid fa-arrow-right"></i></button>
+            <img src="https://images-beta.tossdown.com/site/7aba8915-02ed-46ee-bd96-1063abe072fa.webp" style="text-align: right; padding-left: 650px; padding-bottom: 200px;"></div>
+            <div>
+                <h1 style="text-align: center; color: white; margin-top: 20px; padding-bottom: 20px; font-size: 50px;">Salt'n Pepper<br>
+                    Express Franchises</h1>
+                </div>
+            <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center;">
+                </div>
+            <div style="display: flex; flex-direction: row; gap: 30px; justify-content: center;">
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/mall.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">E M P U R I U M  M A L L</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i> 2nd Floor, Food Court Emporium Mall</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 0311-1100947</p>
+                    <button style="border-radius: 30px; color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;">
+                    <img style="width: 360px; height: 260px;" src="./screen/gujrawala.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">E M P U R I U M  M A L L</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i> 2nd Floor, Food Court Emporium Mall</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 0311-1100947</p>
+                    <button style="border-radius: 30px; color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/sarjoda.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">S A R G O D H A</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i> Opposite Sargodha Arts Council Babar Road</p>
+                    <p style="cursor: pointer; color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 048-3725500</p>
+                    <button style="border-radius: 30px; color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div style="display: flex;padding-top: 30px; flex-direction: row; gap: 30px; justify-content: center;">
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/jhelm.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">J H E L U M</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>Opposite Dancing Fountain Gallery 2 Citi Housing<br> Jhelum,</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 0307-7675555</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;">
+                    <img style="width: 360px; height: 260px;" src="./screen/faisal.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">F A I S A L   T O W N</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>  34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 042-111-100-678</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/dha.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">D H A</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i> 2nd Floor, Food Court Emporium Mall</p>
+                    <p style="cursor: pointer; color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 0311-1100947</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+            </div>
+
+            <div style="display: flex;padding-top: 30px; flex-direction: row; gap: 30px; justify-content: center;">
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/bharia.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">J H E L U M</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>
+                        Arwa Heights Building 19 Nishtar Block, Sector E,<br> Bahria Town Lahore</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 042-111-100-678</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;">
+                    <img style="width: 360px; height: 260px;" src="./screen/gujra.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">G U J A R  K H A N</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>  New Metro City Gujar Khan</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 042-111-100-678</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/lahore.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">L A H O R E</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>Shop no.5, Arcade Block, Fortress Stadium,<br> Lahore</p>
+                    <p style="cursor: pointer; color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 042-366-23-100</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+            </div>
+
+
+            <div style="padding-bottom: 50px; display: flex;padding-top: 30px; flex-direction: row; gap: 30px; justify-content: center;">
+                <div style="text-align: center;"> 
+                    <img style="width: 360px; height: 260px;" src="./screen/bharia.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">G U J R A T</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i> Service Mor, Gujrat</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 0311-1124600</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div style="text-align: center;">
+                    <img style="width: 360px; height: 260px;" src="./screen/gujra.png">
+                    <p style="color: red; padding-top: 20px; font-size: small;">S H I W A L</p>
+                    <p style="color: white; font-size: large;">Salt'n Pepper Express</p>
+                    <p style="color: white; font-size: small;"><i class="fa-solid fa-location-dot"></i>  Opposite Main Gate Police Line, Sahiwal</p>
+                    <p style="cursor: pointer;color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 040-4515485</p>
+                    <button style="border-radius: 30px;color: white; background-color: black;">Get Directions<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div style="background-color: black;">
+                <h1 style="text-align: center; color: white; margin-top: 20px; padding-bottom: 40px; font-size: 50px;">Salt'n Pepper<br>
+                    Village Franchises</h1>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: left;">
+                    <img src="https://images-beta.tossdown.com/site/0df39a08-2dca-4998-adda-4ca66b1132cb.webp" alt="photo"
+                    style="width: 630px; height: 400px; ">
+                    <div style="text-align: left; margin-left: 10px;"> <!-- Adjusted margin for better alignment -->
+                        <p style="font-size: large; color: red;"> G U J R A W A L A</p>
+                        <p style="font-size: 29px; color: white;"> Salt'n Pepper Village</p>
+                        <p style="color: white; font-size: 20px;"><i class="fa-solid fa-location-dot"></i>  Opposite Main Gate Police Line, Sahiwal</p>
+                        <p style="cursor: pointer; color: white; font-size: small;"><i class="fa-solid fa-phone"></i> Ph: 055-3884500, 055-3880400</p>
+                        <button style="border-radius: 30px;size: 15px; background-color: lightgreen;">Get Directions <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>         
+                <div style="background-color: black;">
+                    <h1 style="text-align: center; color: white; margin-top: 40px; padding-bottom: 40px; font-size: 50px;">Salt'n Pepper
+                        <br>
+                        Express Franchises (Opening Soon)</h1>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: center; padding-bottom: 30px; gap: 40px;">
+                            <img style="width: 360px; height: 260px;" src="./screen/aljalil.png">
+                            <img style="width: 360px; height: 260px;" src="./screen/sheikhupura.png">
+                            <img style="width: 360px; height: 260px;" src="./screen/rawalpindi.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: center;padding-bottom: 30px; gap: 40px;">
+                            <img style="width: 360px; height: 260px;" src="./screen/gujranwala.png">
+                            <img style="width: 360px; height: 260px;" src="./screen/sialkot.png">
+                            <img style="width: 360px; height: 260px;" src="./screen/sharqpur.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: center;padding-bottom: 30px; gap: 40px;">
+                            <img style="width: 360px; height: 260px;" src="./screen/burewala.png">
+                        </div>
+                        <div style="text-align: center;color: white;padding-bottom: 40px; padding-top: 50px;">
+                            <h1>Social Feed</h1>
+                        </div>
+                        <div style="cursor: pointer; display: flex;justify-content: center; padding-bottom: 30px; gap: 20px;">
+                            <img src="./screen/grill.png">
+                            <img src="./screen/chicken.png">
+                            <img src="./screen/burger.png">
+                            <img src="./screen/mint.png">
+                            <img src="./screen/karahi.png">
+                            
+                        </div>
+        <footer style="background-color: black; color: white; padding: 50px 0; text-align: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                
+                <p style="font-size: 18px;">Subscribe to our newsletter to stay updated on new menu items, promotions, and more!</p>
+                <form style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+                    <input type="email" placeholder="Enter your email" style="padding: 10px; border-radius: 20px; border: none; width: 250px;">
+                    <button type="submit" style="background-color: lightgreen; color: white; padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer;">Subscribe</button>
+                </form>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <p style="font-size: 18px;">Follow Us:</p>
+                    <div style="display: flex; justify-content: center; gap: 20px;">
+                        <a href="https://www.facebook.com/saltnpepperpk/" target="_blank"><i class="fa-brands fa-facebook-f" style="font-size: 24px;"></i></a>
+                        <a href="https://www.instagram.com/saltnpepperpk/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 24px;"></i></a>
+                        <a href="https://www.twitter.com/saltnpepperpk/" target="_blank"><i class="fa-brands fa-twitter" style="font-size: 24px;"></i></a>
+                        <a href="https://www.youtube.com/saltnpepperpk/" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 24px;"></i></a>
+                    </div>
+                    <p style="font-size: 18px;">Offices Address:</p>
+                    <p style="font-size: 16px;">123, Salt'n Pepper Lane, Lahore, Pakistan</p>
+                    <p style="font-size: 18px;">Site Link:</p>
+                    <a href="https://www.saltnpepper.pk" target="_blank" style="color: lightgreen;">www.saltnpepper.pk</a>
+                </div>
+                <p style="margin-top: 20px;">Copyright &copy; 2023 Salt'n Pepper. All rights reserved.</p>
+            </div>
+        </footer>
+        </body>
+</html>
